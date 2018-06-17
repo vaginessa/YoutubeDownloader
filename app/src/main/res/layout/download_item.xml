@@ -1,0 +1,6 @@
+<TextView android:id="@+id/descargaItem"
+    android:layout_width="319dp"
+    android:layout_height="50dp"
+    android:text="TextView"
+    android:onClick="convert"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

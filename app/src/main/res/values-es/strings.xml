@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Youtube Downloader</string>
+
+    <string name="notification_channel_converter">Servicio de conversión</string>
+    <string name="notification_channel_converter_des">Muestra notificación cuando el servicio está corriendo en el fondo</string>
+
+    <string name="converter_service_running">Convirtiendo</string>
+    <string name="converter_service_running_with_speed">Convirtiendo: %s</string>
+
+    <string name="network_error">Error de red</string>
+
+    <string name="open_play_store">Abrir Play Store</string>
+
+    <string name="mainText">Listo, para descargar un video compártalo con la app</string>
+    <string name="notYTLink">Este no es un link de youtubue</string>
+    <string name="noneYTLinks">No se han encontrado links de descarga, intente de nuevo.</string>
+</resources>

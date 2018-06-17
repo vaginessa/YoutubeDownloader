@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#E6E6E6</color>
+    <color name="colorAccent">#f7165d</color>
+    <color name="backgroundColor">#ffffff</color>
+
+    <color name="ic_launcher_background">#F8F8F8</color>
+
+    <color name="screen_overlay">#CCFFFFFF</color>
+    
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="teal_500">#009688</color>
+    <color name="red_500">#F44336</color>
+    <color name="green_600">#43A047</color>
+    <color name="gray_600">#757575</color>
+
+    <color name="custom_activity_on_crash_primary">#C62828</color>
+    <color name="custom_activity_on_crash_primary_dark">#B71C1C</color>
+    <color name="custom_activity_on_crash_accent">#FF5252</color>
+
+</resources>
