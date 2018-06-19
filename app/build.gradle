@@ -5,11 +5,11 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.github.mcp"
+        applicationId "com.dt3264.MP3Converter"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
-        versionName "0.8.0"
+        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -26,7 +26,7 @@ android {
     }
 
 
-    buildTypes {
+    /*buildTypes {
         debug {
             applicationIdSuffix ".dev"
         }
@@ -88,7 +88,7 @@ android {
             versionCode 40000 + _versionCode
             versionNameSuffix "-x86_64"
         }
-    }
+    }*/
 
     lintOptions {
         ignore 'ExtraTranslation', 'MissingTranslation'

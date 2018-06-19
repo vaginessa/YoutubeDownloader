@@ -42,10 +42,6 @@
 
                 <data android:mimeType="text/plain" />
 
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>

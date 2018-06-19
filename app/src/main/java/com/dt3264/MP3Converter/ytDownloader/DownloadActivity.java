@@ -1,4 +1,4 @@
-package com.dt3264.ytDownloader;
+package com.dt3264.MP3Converter.ytDownloader;
 
 import android.app.Activity;
 import android.app.DownloadManager;
@@ -20,7 +20,6 @@ import android.widget.Toast;
 import com.dt3264.MP3Converter.Main2Activity;
 import com.dt3264.MP3Converter.R;
 import com.dt3264.MP3Converter.SingletonInstances;
-import com.dt3264.ytDownloader.KotlinHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -56,6 +55,7 @@ public class DownloadActivity extends Activity {
 
         if(KotlinHelper.downloadFolderExist()) {
             Intent intent = new Intent(this, Main2Activity.class);
+            intent.putExtra("fromShare", true);
             startActivity(intent);
         }
         prepare(savedInstanceState);
@@ -63,8 +63,7 @@ public class DownloadActivity extends Activity {
 
     void prepare(Bundle savedInstanceState){
         // Check how it was started and if we can get the youtube link
-        if (savedInstanceState == null && Intent.ACTION_SEND.equals(getIntent().getAction())
-                && getIntent().getType() != null && "text/plain".equals(getIntent().getType())) {
+        if (savedInstanceState == null && Intent.ACTION_SEND.equals(getIntent().getAction()) && getIntent().getType() != null && "text/plain".equals(getIntent().getType())) {
 
             String ytLink = getIntent().getStringExtra(Intent.EXTRA_TEXT);
 

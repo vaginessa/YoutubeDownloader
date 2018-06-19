@@ -15,4 +15,6 @@
     <string name="mainText">Listo, para descargar un video compártalo con la app</string>
     <string name="notYTLink">Este no es un link de youtubue</string>
     <string name="noneYTLinks">No se han encontrado links de descarga, intente de nuevo.</string>
+    <string name="pathOfDownloads">Ruta de descargas actual: </string>
+    <string name="updatePathButton">Actualizar carpeta de descaras</string>
 </resources>

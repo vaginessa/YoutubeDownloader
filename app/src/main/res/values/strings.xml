@@ -14,4 +14,7 @@
     <string name="mainText">Ready, to download a video share it with the app</string>
     <string name="notYTLink">This is not a youtube link</string>
     <string name="noneYTLinks">There\'s no download links. Try again.</string>
+    <string name="pathOfDownloads">Actual download path: </string>
+    <string name="updatePathButton">Select download path</string>
+
 </resources>

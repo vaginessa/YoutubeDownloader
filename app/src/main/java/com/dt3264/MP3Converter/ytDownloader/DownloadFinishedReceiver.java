@@ -1,4 +1,4 @@
-package com.dt3264.ytDownloader;
+package com.dt3264.MP3Converter.ytDownloader;
 
 import android.app.DownloadManager;
 import android.content.BroadcastReceiver;
@@ -6,8 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-
-import com.dt3264.ytDownloader.InputOutputFile;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
