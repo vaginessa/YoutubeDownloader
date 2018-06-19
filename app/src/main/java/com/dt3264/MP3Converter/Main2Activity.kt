@@ -23,6 +23,10 @@ class Main2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        val sharedPrefs = SingletonInstances.getSharedPrefs()
+        if (sharedPrefs.lastKnownVersionCode < BuildConfig.VERSION_CODE) {
+            sharedPrefs.lastKnownVersionCode = BuildConfig.VERSION_CODE
+        }
         if (!hasWriteStoragePermission(this)) {
             // request permission without checking result
             requestPermissions(appPermissions, 0)
@@ -39,18 +43,14 @@ class Main2Activity : AppCompatActivity() {
             }
         })
         textView = findViewById(R.id.downloadPathText) as TextView
-        val uri = Uri.parse(sharedPrefs.lastOutputFolderUri)
-        var text = getString(R.string.pathOfDownloads) + " \n" + (uri.path.toString()
-                .replace("tree", "storage")
-                .replace(":", "/"))
-        if(!text.endsWith('/')) text+="/"
-        textView!!.text = text
-
-        val sharedPrefs = SingletonInstances.getSharedPrefs()
-        if (sharedPrefs.lastKnownVersionCode < BuildConfig.VERSION_CODE) {
-            sharedPrefs.lastKnownVersionCode = BuildConfig.VERSION_CODE
+        if(!sharedPrefs.lastOutputFolderUri.isNullOrEmpty()) {
+            val uri = Uri.parse(sharedPrefs.lastOutputFolderUri)
+            var text = getString(R.string.pathOfDownloads) + " \n" + (uri.path.toString()
+                    .replace("tree", "storage")
+                    .replace(":", "/"))
+            if (!text.endsWith('/')) text += "/"
+            textView!!.text = text
         }
-
 
     }
 

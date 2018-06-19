@@ -120,6 +120,11 @@ dependencies {
 
     implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
 
+    debugCompile('com.github.ajitsing:sherlock:1.0.4@aar') {
+        transitive = true
+    }
+    releaseCompile('com.github.ajitsing:sherlock-no-op:1.0.4@aar')
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

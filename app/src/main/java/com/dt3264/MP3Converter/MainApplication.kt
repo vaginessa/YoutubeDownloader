@@ -3,6 +3,7 @@ package com.dt3264.MP3Converter
 import android.app.Application
 import android.os.StrictMode
 import com.dt3264.MP3Converter.util.reportNonFatal
+import com.singhajit.sherlock.core.Sherlock
 import io.reactivex.exceptions.UndeliverableException
 import io.reactivex.plugins.RxJavaPlugins
 /**
@@ -17,6 +18,7 @@ class MainApplication: Application() {
         //setupStrictMode()
 
         SingletonInstances.init(this)
+        Sherlock.init(this);
 
         setUpRxPlugins()
     }
